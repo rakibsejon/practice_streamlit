@@ -53,9 +53,6 @@ R0 = 0                      # 免疫保持者数_初期値
  
 r = st.sidebar.slider('基本再生産数', min_value=1.0, max_value=10.0, step=0.01) 
 gamma = 1 / st.sidebar.slider('回復率（回復までの日数）', min_value=1, max_value=20, step=1) 
- 
-#r = 2.5                     # 基本再生産数 
-#gamma = 1/10                # 回復率（1/10: 10日で回復） 
 beta = r * gamma / S0        # 感染率 
  
 ## 分析 
